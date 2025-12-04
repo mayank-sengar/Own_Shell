@@ -5,8 +5,10 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("$ ", (answer) => {
-  console.log("prompt: "+ answer)
+// Print the prompt explicitly so it's visible even when stdout isn't a TTY
+process.stdout.write("$ ");
+
+rl.on("line", (answer) => {
+  console.log("prompt: " + answer);
   rl.close();
-  
 });
