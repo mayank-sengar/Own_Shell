@@ -5,8 +5,8 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-// rl.question("$ ", (answer) => {
-//   console.log("prompt: "+ answer)
-//   rl.close();
+rl.question("$ ", (answer) => {
+  // console.log("prompt: "+ answer)
+  rl.close();
   
-// });
+});
