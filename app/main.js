@@ -8,5 +8,4 @@ const rl = readline.createInterface({
 rl.question("$ ", (answer) => {
   // console.log("prompt: "+ answer)
   rl.close();
-  
 });
